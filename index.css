@@ -28,6 +28,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
 .main-container{
    
     grid-area:main-container ;
@@ -51,6 +52,12 @@ background-color: rgba(105, 26, 26, 0.7);
     background-color: #eee;
     background-image: url("images/profilePic.png");
     background-size: cover;
+    
+}
+.profile-pic-container .Img:hover{
+    height: 170px;
+    width: 170px;
+   
     
 }
 .menu-item{
