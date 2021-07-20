@@ -54,7 +54,12 @@ background-color: rgba(105, 26, 26, 0.7);
     background-size: cover;
     
 }
-
+.profile-pic-container .Img:hover{
+    height: 170px;
+    width: 170px;
+   
+    
+}
 .menu-item{
    
     display: flex;
