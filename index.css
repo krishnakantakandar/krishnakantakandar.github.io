@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    height: 100vh;
+    width:100vw;
+    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30% 20% 50%;
+    grid-template-areas:"profile-pic-container main-container"
+                        "name-cointainer main-container"
+                        "menu-cointainer main-container"
+}
+.name-cointainer{
+    background-color: rgba(105, 26, 26, 0.7);
+grid-area: name-cointainer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.profile-pic-container{
+    background-color: rgba(105, 26, 26, 0.7);
+grid-area:profile-pic-container ;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main-container{
+   
+    grid-area:main-container ;
+    overflow: auto;
+}
+
+.menu-cointainer{
+
+grid-area:  menu-cointainer;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(105, 26, 26, 0.7);
+
+}
+
+.profile-pic-container .Img{
+    height: 130px;
+    width: 130px;
+    border-radius:50% ;
+    background-color: #eee;
+    background-image: url("images/profilePic.png");
+    background-size: cover;
+    
+}
+.menu-item{
+   
+    display: flex;
+    margin-top: 15px;
+   
+}
+.menu-item-cointainer
+{
+    display: block;
+    width: 60%;
+    height: 100%;
+    margin-top: 10%;
+}
+.nav-image{
+    width:30vw;
+    height:100vh;
+    background-image:url("images/success.jpg");
+    background-repeat:round;
+     position: absolute;
+    z-index:1;
+}
+p{
+    color: aliceblue;
+}
+.about-me-grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+   
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "about-heading about-heading"
+                         "about-des about-video"
+    
+
+
+}
+.about-heading{
+    background-color: aqua;
+    grid-area: about-heading;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    font-size: larger;
+    
+    align-items: center;
+
+}
+.about-des{
+
+    grid-area: about-des;
+    width: 100%;
+    height: 100%;
+
+
+}
+.my-story1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: aquamarine;
+    width: 90%;
+    height: 45%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.written{
+    margin: 5%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.my-story2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: aquamarine;
+    width: 90%;
+    height: 30%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-video{
+    /* background-color: chartreuse; */
+    grid-area: about-video;
+    width: 100%;
+    height: 100%;
+
+}
+.my-video{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: aquamarine;
+    width: 95%;
+    height: 85%;
+    /* margin: 1% 20% 5% 20%; */
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    
+
+}
+#video-design{
+    width: 100%;
+    height: 30%;
+}
+a:hover{
+    font-size:large;
+}
+a:active{
+    color: rgb(234, 234, 245);
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.education-grid{
+    width: 100%;
+    height:  100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 12% 22% 22% 22% 22% ;
+    grid-template-areas: "edu-heading edu-heading"
+                        " present-year edu-info1"
+                        " year-2020 edu-info2"
+                        "year-2016 edu-info3"
+                        "year-2014 edu-info4"
+
+}
+.edu-heading{
+    grid-area: edu-heading;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.present-year
+{
+    grid-area: present-year;
+  
+    border-right: 1px solid rgb(105, 103, 103);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+.year-2020{
+    grid-area: year-2020;
+    
+    border-right: 1px solid rgb(105, 103, 103);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.year-2016
+{
+    
+grid-area: year-2016;
+border-right: 1px solid rgb(105, 103, 103);
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+}
+
+.year-2014{
+    grid-area: year-2014;
+    
+    border-right:  1px solid rgb(105, 103, 103);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.edu-info1{
+    grid-area: edu-info1;
+    display: flex;
+
+
+}
+.edu-info2{
+    grid-area: edu-info2;
+    display: flex;
+}
+.edu-info3{
+    grid-area: edu-info3;
+    display: flex;
+}
+.edu-info4{
+    grid-area: edu-info4;
+    display: flex;
+}
+.edu-details{
+    width: 50%;
+    height: 90%;
+    margin-left: 3%;
+    margin-top: 5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    border: 1px solid green;
+}
+.edu-logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 10% 20% 30% 10% 20%;
+    grid-template-columns: 10% 30% 15% 15% 30%;
+    grid-template-areas: "project-head project-head project-head project-head project-head"
+                         "web web-topic web-topic web-pic web-pic"
+                         "web web-des web-des web-pic web-pic"
+                         "android anpic1 anpic2 anpic2 anpic3"
+                         "android anpic1-topic anpic2-topic anpic2-topic anpic3-topic"
+                         "android anpic1-des anpic2-des anpic2-des anpic3-des"
+}
+.project-head{
+    width: 100%;
+    height: 100%;
+    grid-area: project-head;
+    background-color: aqua;
+}
+.web-topic{
+    grid-area: web-topic;
+    background-color: burlywood;
+}
+.web{
+    grid-area: web;
+    background-color: black;
+}
+.web-des{
+    grid-area: web-des;
+    background-color: blue;
+}
+.web-pic{
+    grid-area: web-pic;
+    background-color: blueviolet;
+}
+.android{
+    grid-area: android;
+    background-color: brown;
+}
+.anpic1
+{
+    grid-area: anpic1 ;
+    background-color: chartreuse;
+
+} 
+.anpic2
+{
+    background-color: burlywood;
+grid-area: anpic2 ;
+} 
+
+.anpic3
+{
+    grid-area:anpic3;
+    background-color: cornflowerblue;
+
+}
+.anpic1-topic{
+    grid-area: anpic1-topic;
+    background-color: chocolate;
+}
+.anpic2-topic{
+    grid-area: anpic2-topic;
+    background-color: crimson;
+}
+.anpic3-topic{
+    grid-area: anpic3-topic;
+    background-color: darkblue;
+}
+.anpic1-des
+{grid-area:anpic1-des ;
+    background-color: cornflowerblue;
+}
+.anpic2-des
+{grid-area:anpic2-des ;
+    background-color: darkgreen;
+}
+.anpic3-des
+{grid-area:anpic3-des ;
+    background-color: darkgray;
+}
+
+@media screen and (max-width: 600px)
+{
+  .grid-container{
+    grid-template-columns: 50%  50%;
+    grid-template-rows: 25%  10% 65%;
+    grid-template-areas:"profile-pic-container name-cointainer "
+                        "menu-cointainer menu-cointainer"    
+                        "main-container main-container "
+  }
+  .nav-image{
+    width:100vw;
+    height:35%;
+    background-image:url("images/success.jpg");
+    background-repeat:round;
+     position: absolute;
+    z-index:1;
+}
+  .menu-item-cointainer
+{
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 5%;
+ 
+}
+p{
+    font-size: small;
+}
+.menu-item{
+   
+    display: block;
+    margin-left: 10px;
+   
+}
+.written{
+    margin: 5%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+.about-me-grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+   
+    grid-template-rows: 10% 60% 30%;
+    grid-template-columns: 100%;
+    grid-template-areas: "about-heading"
+                         "about-des"
+                         "about-video"
+    
+
+
+}
+
+.my-story1{
+   
+    width: 90%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+
+}
+.my-story2{
+ 
+    width: 90%;
+    height: 40%;
+    margin: 3%;
+
+}
+/* .my-story3{
+   
+    width: 90%;
+    height: 20%;
+    margin: 3%;
+
+} */
+/* .my-video{
+  
+    width: 50%;
+    height: 85%;
+ 
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+
+} */
+#video-design{
+    width: 100%;
+    height: 100%;
+}
+.education-grid{
+
+    height:  250%;
+    
+
+}
+.about-me-grid{
+ 
+    height: 200%;
+    
+
+
+}
+
+.my-video{
+    margin-top: 0%;
+}
+.nav-image{
+    width:100vw;
+    height:35vh;
+    background-image:url("images/success1.jpg");
+    
+}
+
+}
